@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public GameObject pl;
     public Transform[] target;
     public float rap;
     private int curr;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,15 @@ public class EnemyMovement : MonoBehaviour
         else
         {
             curr = (curr + 1) % target.Length;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            
+                Destroy(pl);
+            
         }
     }
 }

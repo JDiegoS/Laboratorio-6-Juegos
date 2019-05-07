@@ -60,9 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Coll.cs" />
     <Compile Include="Assets\EnemyMovement.cs" />
     <Compile Include="Assets\Menu.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\trigger.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/jdieg/Laboratorio 6/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
